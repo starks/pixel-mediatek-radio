@@ -43,4 +43,4 @@ Verified SHA-256 values:
 4. Confirm the resulting masks. Report serving-band attachment independently using Android's primary physical channel report.
 5. To restore, compute the delta from the current masks back to the saved baseline. Clear the restore point after every original word matches. Retain it if verification fails.
 
-The reference implementation serializes its own requests and cooperates with the paired Bunnylock build via a shared file lock. Third-party radio clients can still change the modem independently.
+The reference implementation serializes its requests with a file lock. Other radio clients can still change the modem independently.
