@@ -2,6 +2,8 @@
 
 An app-independent reference for LTE and 5G NR band locking through the MediaTek radio vendor service on a rooted Pixel. It includes a runnable Android shell client and [protocol notes](PROTOCOL.md) for modem-tool developers.
 
+For integration into another app, see the [MIT-licensed NSG reference](nsg-reference/README.md).
+
 ## Compatibility
 
 Verified on one Pixel 11 Pro XL (`kodiak`), Android 17 build `DP11.261030.003`, baseband `a900a-QPR_260921-260923-M-16421473`, using slot 1 as the default data line (subscription ID 1). The helper gates access on the device codename, both vendor library hashes, the Binder interface version, and the tested default data subscription ID. Other firmware builds need their own validation.
